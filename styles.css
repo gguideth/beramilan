@@ -1,0 +1,158 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern, rounded font similar to FS Koopman */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #f4f4f9; /* Light grey background */
+    text-align: center;
+    color: #333;
+}
+
+/* Centered content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 40px 20px;
+}
+
+/* Emoji logo styles (static) */
+.emoji-logo {
+    font-size: 130px; /* Large emojis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; /* Adds space between emojis */
+    margin-bottom: 40px; /* Adds space below emojis */
+}
+
+/* Coming Soon Text */
+.coming-soon {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+}
+
+.coming-soon h2 {
+    margin-bottom: 10px; /* Space between "BERAMilan" and the rest of the text */
+    font-size: 72px; /* Larger size for BERAMilan */
+    font-weight: 700; /* Bold text */
+    text-transform: uppercase; /* All caps for emphasis */
+    letter-spacing: 6px; /* More space between letters */
+    color: #2c2c2c; /* Darker color for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
+}
+
+.coming-soon .subtext {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #777; /* Smaller, lighter color for subtext */
+}
+
+/* Email Signup Form */
+.email-signup {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px; /* Set max-width for a clean look */
+}
+
+.email-signup input[type="email"] {
+    width: 100%;
+    padding: 16px;
+    border-radius: 50px; /* Rounded input */
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    text-align: center; /* Center text inside the input */
+    transition: all 0.3s ease;
+}
+
+.email-signup input[type="email"]::placeholder {
+    text-align: center; /* Center the placeholder text */
+}
+
+.email-signup input[type="email"]:focus {
+    border-color: #f76b00; /* Highlight input on focus */
+    box-shadow: 0 0 12px rgba(247, 107, 0, 0.3); /* Light shadow on focus */
+}
+
+.email-signup button {
+    width: 100%;
+    padding: 16px;
+    background-color: #f76b00; /* Orange/Brownish color */
+    border-radius: 50px; /* Rounded button */
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.email-signup button:hover {
+    background-color: #d85a00; /* Darker orange/brown on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #fff; /* White footer background */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow to separate footer */
+}
+
+footer .social-icons {
+    margin-bottom: 15px;
+}
+
+footer .social-icons a {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+footer .social-icons i {
+    font-size: 32px;  /* Larger icons */
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+    color: #f76b00; /* Hover effect: change color to the button color */
+}
+
+footer p {
+    font-size: 14px;
+    color: #777; /* Lighter color for footer text */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .email-signup {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .emoji-logo {
+        font-size: 110px; /* Resize the emojis on smaller screens */
+    }
+
+    .coming-soon {
+        font-size: 26px; /* Smaller text on mobile */
+    }
+}
