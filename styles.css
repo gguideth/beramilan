@@ -47,18 +47,14 @@ body {
 
 .coming-soon h2 {
     margin-bottom: 10px; /* Space between "BERAMilan" and the rest of the text */
-    font-size: 72px; /* Larger size for BERAMilan */
+    font-size: 6vw; /* Use viewport width for scalable font size */
     font-weight: 700; /* Bold text */
     text-transform: uppercase; /* All caps for emphasis */
     letter-spacing: 6px; /* More space between letters */
     color: #2c2c2c; /* Darker color for better contrast */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
-}
-
-.coming-soon .subtext {
-    margin-top: 8px;
-    font-size: 18px;
-    color: #777; /* Smaller, lighter color for subtext */
+    line-height: 1.2; /* Ensure text does not overlap */
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 /* Email Signup Form */
@@ -155,8 +151,8 @@ footer p {
     }
 
     .coming-soon h2 {
-        font-size: 40px; /* Smaller text for "BERAMilan" */
-        letter-spacing: 4px; /* Less letter-spacing for smaller screens */
+        font-size: 10vw; /* Scale font size more aggressively on smaller screens */
+        letter-spacing: 4px; /* Reduce letter-spacing for better readability */
     }
 
     .coming-soon .subtext {
@@ -195,9 +191,5 @@ footer p {
 
     .coming-soon h2 {
         font-size: 60px; /* Adjust for medium-sized screens */
-    }
-
-    .email-signup {
-        max-width: 450px; /* Slightly narrower than desktop version */
     }
 }
