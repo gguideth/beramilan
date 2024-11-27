@@ -66,6 +66,7 @@ body {
     margin-top: 40px;
     width: 100%;
     max-width: 500px; /* Set max-width for a clean look */
+    padding: 20px;
 }
 
 .email-signup input[type="email"] {
@@ -143,16 +144,60 @@ footer p {
 
 /* Responsive design */
 @media (max-width: 600px) {
+    .container {
+        padding: 30px 15px; /* Add more padding on smaller screens */
+    }
+
+    /* Adjust emoji size on smaller screens */
+    .emoji-logo {
+        font-size: 100px; /* Resize the emojis on smaller screens */
+        gap: 20px; /* Slightly smaller gap between emojis */
+    }
+
+    .coming-soon h2 {
+        font-size: 40px; /* Smaller text for "BERAMilan" */
+        letter-spacing: 4px; /* Less letter-spacing for smaller screens */
+    }
+
+    .coming-soon .subtext {
+        font-size: 16px; /* Smaller subtext font size */
+    }
+
+    /* Adjust email signup form width */
     .email-signup {
         width: 90%;
-        padding: 20px;
+        max-width: 400px; /* Narrow the max width for small screens */
+        padding: 15px;
     }
 
+    /* Make input and button responsive */
+    .email-signup input[type="email"],
+    .email-signup button {
+        font-size: 14px; /* Slightly smaller font size */
+        padding: 14px; /* Smaller padding for buttons and inputs */
+    }
+
+    /* Adjust footer social icons for small screens */
+    footer .social-icons a {
+        margin: 0 10px; /* Reduce spacing between icons */
+    }
+
+    footer .social-icons i {
+        font-size: 28px; /* Smaller icons on mobile */
+    }
+}
+
+/* Additional media query for tablet or medium-sized screens */
+@media (min-width: 601px) and (max-width: 1024px) {
     .emoji-logo {
-        font-size: 110px; /* Resize the emojis on smaller screens */
+        font-size: 120px; /* Slightly smaller than desktop version, but bigger than mobile */
     }
 
-    .coming-soon {
-        font-size: 26px; /* Smaller text on mobile */
+    .coming-soon h2 {
+        font-size: 60px; /* Adjust for medium-sized screens */
+    }
+
+    .email-signup {
+        max-width: 450px; /* Slightly narrower than desktop version */
     }
 }
